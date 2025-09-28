@@ -1,24 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Bellefair&family=Marmelad&family=Monofett&family=Sedgwick+Ave+Display&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.para{
-    font-family: Bellefair;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 25px;
+
+.sedgwick {font-family: "Sedgwick Ave Display", cursive;font-weight: 400;font-style: normal;}
+.bellefair {font-family: "Bellefair", serif;font-weight: 400;font-style: normal;}
+.monofett {font-family: "Monofett", monospace;font-weight: 400;font-style: normal;}
+.marmelad {font-family: "Marmelad", sans-serif;font-weight: 400;font-style: normal;}
+.abeezee {font-family: "ABeeZee", sans-serif;font-weight: 400;font-style: normal;}
+
+.para {
+    font-size: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
 }
-.Contactpara{
-    font-family: Bellefair;
-    font-weight: 400;
-    font-style: Regular;
+
+.Contactpara {
     font-size: 25px;
     display: flex;
     justify-content: center;
     text-align: start;
     align-items: center;
 }
+
+
+
+/* paracarousel */
+.paracarousel {top: 100px;left: 40px;font-family: "Bellefair", serif;}
+
+@media screen and (min-width: 425px) {.paracarousel {top: 115px;left: 50px;}}
+@media screen and (min-width: 768px) {.paracarousel {top: 250px;left: 100px;}}
+@media screen and (min-width: 1024px) {.paracarousel {top:420px;left: 100px;}}
+@media screen and (min-width: 1440px) {.paracarousel {top: 520px;left: 100px;}}
+
+/* line image one */
+
+.lineimageone {height:36px ;width: auto;}
+@media screen and (min-width: 425px) {.lineimageone {height: 36px;}}
+@media screen and (min-width: 768px) {.lineimageone {height: 96px;}}
+@media screen and (min-width: 1024px) {.lineimageone {height: 128px;}}
+@media screen and (min-width: 1440px) {.lineimageone {height: 128px;}}
+
+/* line image two */
+.lineimagetwo {height: auto;width:80px ;}
+@media screen and (min-width: 425px) {.lineimagetwo {width: 110px;}}
+@media screen and (min-width: 768px) {.lineimagetwo {width: 240px;}}
+@media screen and (min-width: 1024px) {.lineimagetwo {width: 300px;}}
+@media screen and (min-width: 1440px) {.lineimagetwo {width: 300px;}}
+
+
+/* ONE */
+.headone {top: 40px; left: 20px;font-family: "ABeeZee", sans-serif;}
+@media screen and (min-width: 425px) {.headone {top: 50px;left: 20px;}}
+@media screen and (min-width: 768px) {.headone {top: 100px; left: 40px;}}
+@media screen and (min-width: 1024px) {.headone {top: 130px; left:40px;}}
+@media screen and (min-width: 1440px) {.headone {top: 170px;left: 40px;}}
+
+.paraone {top: 60px;left: 40px;font-family: "Bellefair", serif;}
+@media screen and (min-width: 425px) {.paraone {top: 70px;left: 50px;}}
+@media screen and (min-width: 768px) {.paraone {top: 150px;left: 100px;}}
+@media screen and (min-width: 1024px) {.paraone {top: 190px;left: 100px;}}
+@media screen and (min-width: 1440px) {.paraone {top: 240px;left: 100px;}}        
+
+.lineone {top: 60px;left: 30px;}
+@media screen and (min-width: 425px) {.lineone {top: 70px;left: 40px;}}
+@media screen and (min-width: 768px) {.lineone {top: 160px;left: 70px;}}
+@media screen and (min-width: 1024px) {.lineone {top: 200px;left: 60px;}}
+@media screen and (min-width: 1440px) {.lineone {top: 235px;left: 70px;}}
+
+/* TWO */
+.headtwo {top: 80px; left: 20px;font-family: "ABeeZee", sans-serif;}
+@media screen and (min-width: 425px) {.headtwo {top: 95px;left: 20px;}}
+@media screen and (min-width: 768px) {.headtwo {top: 210px; left: 40px;}}
+@media screen and (min-width: 1024px) {.headtwo {top: 350px; left:40px;}}
+@media screen and (min-width: 1440px) {.headtwo {top: 450px;left: 40px;}}
+
+.paratwo {top: 100px;left: 40px;font-family: "Bellefair", serif;}
+@media screen and (min-width: 425px) {.paratwo {top: 110px;left: 50px;}}
+@media screen and (min-width: 768px) {.paratwo {top: 250px;left: 100px;}}
+@media screen and (min-width: 1024px) {.paratwo {top: 410px;left: 100px;}}
+@media screen and (min-width: 1440px) {.paratwo {top: 520px;left: 100px;}}        
+
+.linetwo {top: 110px;left: 30px;}
+@media screen and (min-width: 425px) {.linetwo {top: 117px;left: 40px;}}
+@media screen and (min-width: 768px) {.linetwo {top: 270px;left: 70px;}}
+@media screen and (min-width: 1024px) {.linetwo {top: 435px;left: 60px;}}
+@media screen and (min-width: 1440px) {.linetwo {top: 535px;left: 60px;}}
+/* three */
+.headthree {top: 40px;left: 120px;font-family: "ABeeZee", sans-serif;}
+@media screen and (min-width: 425px) {.headthree {top: 50px;left: 140px;}}
+@media screen and (min-width: 768px) {.headthree {top: 100px;left: 270px;}}
+@media screen and (min-width: 1024px) {.headthree {top: 130px;left: 340px;}}
+@media screen and (min-width: 1440px) {.headthree {top: 170px;left: 570px;}}
+
+.parathree {top: 60px;left: 140px;font-family: "Bellefair", serif;} 
+@media screen and (min-width: 425px) {.parathree {top: 70px;left: 150px;}}
+@media screen and (min-width: 768px) {.parathree {top: 150px;left: 300px;}}
+@media screen and (min-width: 1024px) {.parathree {top: 190px;left: 370px;}}
+@media screen and (min-width: 1440px) {.parathree {top: 240px;left: 600px;}}
+
+.linethree {top: 60px;left: 130px;}
+@media screen and (min-width: 425px) {.linethree {top: 70px;left: 140px;}}
+@media screen and (min-width: 768px) {.linethree {top: 150px;left: 275px;}}
+@media screen and (min-width: 1024px) {.linethree {top: 180px;left: 340px;}}
+@media screen and (min-width: 1440px) {.linethree {top: 235px;left: 570px;}}
+/* four */
+.headfour {top: 45px;left: 115px;font-family: "Monofett", monospace;}
+@media screen and (min-width: 425px) {.headfour {top: 35px; left: 140px;}}
+@media screen and (min-width: 768px) {.headfour {top: 70px; left: 250px;}}
+@media screen and (min-width: 1024px) {.headfour {top: 130px; left: 300px;}}
+@media screen and (min-width: 1440px) {.headfour {top: 200px; left: 420px;}}
+
+.parafour {top: 80px;left: 40px;font-family: "Marmelad", sans-serif;text-align: center;}
+@media screen and (min-width: 425px) {.parafour {top: 70px;left: 50px;}}
+@media screen and (min-width: 768px) {.parafour {top: 150px;left: 100px;}}
+@media screen and (min-width: 1024px) {.parafour {top: 240px;left: 100px;}}
+@media screen and (min-width: 1440px) {.parafour {top: 340px;left: 100px;}}
+
+.linefour {top: 65px;left: 110px;}
+@media screen and (min-width: 425px) {.linefour {top: 50px;left: 120px;}}
+@media screen and (min-width: 768px) {.linefour {top: 110px;left: 200px;}}
+@media screen and (min-width: 1024px) {.linefour {top: 190px;left: 250px;}}
+@media screen and (min-width: 1440px) {.linefour {top: 280px;left: 380px;}}       
