@@ -15,7 +15,7 @@ export const Navbar = () => {
 
     return (
         <div className="fixed top-0 left-0 w-full z-50">
-            <div className="flex justify-between items-center bg-white/30 h-7 sm:h-8 md:h-12 lg:h-16 xl:h-20">
+            <div className="flex justify-between items-center bg-white/40 h-7 sm:h-8 md:h-12 lg:h-16 xl:h-20">
                 <div className="flex md:m-2 items-center">
                     <img
                         className="my-2 h-auto w-6 md:w-11 lg:w-14 xl:w-16"
@@ -44,7 +44,9 @@ export const Navbar = () => {
                             { name: "Contact Us", path: "/Contact_us" },
                         ].map((item, index) => (
                             <li key={index}>
-                                <Link to={item.path} className="inline-block text-white transition-all duration-300 hover:text-[#80350a] hover:animate-bounce">{item.name}</Link>
+                                <Link to={item.path} className="inline-block text-[#873201ba] transition-all duration-300 
+          hover:text-[#873201] hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,140,66,0.99)] hover:animate-bounce"
+       >{item.name}</Link>
                             </li>))}
                     </ul>
                 </div>
