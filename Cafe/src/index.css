@@ -27,7 +27,12 @@
     align-items: center;
 }
 
-
+input:autofill {
+    background-color: rgb(255, 255, 255, 0.2) !important;
+}
+/* #form-container {
+   background-color: rgb(255, 255, 255,0.2) !important;
+} */
 
 /* paracarousel */
 .paracarousel {top: 100px;left: 40px;font-family: "Bellefair", serif;}

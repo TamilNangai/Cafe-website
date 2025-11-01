@@ -42,9 +42,10 @@ export const Navbar = () => {
                             { name: "Coffee", path: "/Coffee_page" },
                             { name: "Tea", path: "/Tea_page" },
                             { name: "Contact Us", path: "/Contact_us" },
+                            { name: "Table", path: "/Loginpage" },
                         ].map((item, index) => (
                             <li key={index}>
-                                <Link to={item.path} className="inline-block text-[#873201ba] transition-all duration-300 
+                                <Link to={item.path} className="inline-block text-[#873201] transition-all duration-300 
           hover:text-[#873201] hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,140,66,0.99)] hover:animate-bounce"
        >{item.name}</Link>
                             </li>))}
