@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 function Loginpage() {
-  const USERNAME = "admin";
-  const PASSWORD = "12345";
-
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -12,10 +9,10 @@ function Loginpage() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    if (username === USERNAME && password === PASSWORD) {
+    if ("admin" === username && "12345" ===password) {
       setError("");
       alert("Login Successful!");
-      navigate("/Table"); 
+      navigate("/Table"); z
     } else {
       setError("Invalid username or password");
     }

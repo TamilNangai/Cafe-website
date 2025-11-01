@@ -18,7 +18,7 @@ function Form() {
       email,
       phone,
       message,
-      Date: new Date().toLocaleDateString([], { day: '2-digit', month: '2-digit', year: 'numeric' }),
+      Date: new Date().toLocaleDateString([],{ day: '2-digit', month: '2-digit', year: 'numeric' }),
       Time: new Date().toLocaleTimeString([],{ hour: '2-digit', minute: '2-digit' }),
     };
 
