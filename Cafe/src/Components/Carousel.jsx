@@ -20,9 +20,7 @@ export const Carousel = ({ slides, autoSlide = true, autoSlideInterval = 4000 })
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 w-full h-full transition-opacity duration-[2000ms] ease-in-out ${index === curr ? "opacity-100 z-10" : "opacity-0 z-0"
-            }`}
-        >
+          className={`absolute inset-0 w-full h-full transition-opacity duration-[2000ms] ease-in-out ${index === curr ? "opacity-100 z-10" : "opacity-0 z-0"}`}>
           <Hero_section
             image={slide}
             stylecss={"stylecss"}

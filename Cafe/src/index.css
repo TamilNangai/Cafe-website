@@ -27,9 +27,23 @@
     align-items: center;
 }
 
-input:autofill {
-    background-color: rgb(255, 255, 255, 0.2) !important;
+@layer base {
+    option:checked {
+        background-color: rgba(255, 166, 0, 0.912);
+        
+    }    
 }
+@layer base {
+    option:hover {
+            background-color: rgba(255, 98, 0, 0.912) !important;
+    
+        }
+}
+
+
+/* input:autofill {
+    background-color: rgb(255, 255, 255, 0.2) !important;
+} */
 /* #form-container {
    background-color: rgb(255, 255, 255,0.2) !important;
 } */
