@@ -43,7 +43,7 @@ function Coffee({ cofc1, cofc2, cofc3, cofc4, lefc1, lefc2, lefc3, lefc4, linec,
                   </div>
                   <div className="relative w-1/3 group">
                      <img className="w-full min-h-[120px] sm:max-h-[280px] m-auto" src={c2} />
-                      <div className="absolute inset-0 flex items-center text-[50px] font-greatvibes  text-left bg-opacity-60 text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute inset-0 flex items-center text-[16px] lg:text-[34px] md:text-[26px] xl:text-[48px] font-greatvibes  text-left bg-opacity-60 text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Cappuccino
               </div>
                   </div>
@@ -67,7 +67,7 @@ function Coffee({ cofc1, cofc2, cofc3, cofc4, lefc1, lefc2, lefc3, lefc4, linec,
                <div className="w-full h-fit flex gap-10 xl:-mt-20 lg:-mt-5 md:-mt-5 justify-center items-center">
                   <div className="relative w-1/3 group">
                      <img className="w-full min-h-[120px] sm:max-h-[280px] m-auto" src={c3} />
-                      <div className="absolute inset-0 flex items-center text-[50px] font-greatvibes  text-left bg-opacity-60 text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute inset-0 flex items-center text-[16px] lg:text-[34px] md:text-[26px] xl:text-[48px] font-greatvibes  text-left bg-opacity-60 text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Latee
               </div>
                   </div>
@@ -85,7 +85,7 @@ function Coffee({ cofc1, cofc2, cofc3, cofc4, lefc1, lefc2, lefc3, lefc4, linec,
                   </div>
                   <div className="relative w-1/3 group">
                      <img className="w-full min-h-[120px] sm:max-h-[280px] m-auto" src={c4} />
-                      <div className="absolute inset-0 flex items-center text-[50px] font-greatvibes  text-left bg-opacity-60 text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute inset-0 flex items-center text-[16px] lg:text-[34px] md:text-[26px] xl:text-[48px] font-greatvibes  text-left bg-opacity-60 text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Amaricano
               </div>
                   </div>
@@ -94,7 +94,7 @@ function Coffee({ cofc1, cofc2, cofc3, cofc4, lefc1, lefc2, lefc3, lefc4, linec,
                <div className="w-full h-fit flex gap-10 mt-10 justify-center items-center">
                   <div className="relative w-1/3 group">
                      <img className="w-full min-h-[120px] sm:max-h-[280px] m-auto" src={c5} />
-                      <div className="absolute inset-0 flex items-center text-[50px] font-greatvibes  text-left bg-opacity-60 text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute inset-0 flex items-center text-[16px] lg:text-[34px] md:text-[26px] xl:text-[48px] font-greatvibes  text-left bg-opacity-60 text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Espresso
               </div>
                   </div>
@@ -115,7 +115,7 @@ function Coffee({ cofc1, cofc2, cofc3, cofc4, lefc1, lefc2, lefc3, lefc4, linec,
                   </div>
                   <div className="relative w-1/3 group">
                      <img className="w-full min-h-[120px] sm:max-h-[280px] m-auto" src={c6} />
-                      <div className="absolute inset-0 flex items-center text-[50px] font-greatvibes  text-left bg-opacity-60 text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute inset-0 flex items-center text-[16px] lg:text-[34px] md:text-[26px] xl:text-[48px] font-greatvibes  text-left bg-opacity-60 text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Cold Coffee
               </div>
                   </div>
@@ -124,7 +124,7 @@ function Coffee({ cofc1, cofc2, cofc3, cofc4, lefc1, lefc2, lefc3, lefc4, linec,
                <div className="w-full h-fit flex gap-10 mt-10  justify-center items-center">
                   <div className="relative w-1/3 group">
                      <img className="w-full min-h-[120px] sm:max-h-[280px] m-auto" src={c7} />
-                      <div className="absolute inset-0 flex items-center text-[50px] font-greatvibes  text-left bg-opacity-60 text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute inset-0 flex items-center text-[16px] lg:text-[34px] md:text-[26px] xl:text-[48px] font-greatvibes  text-left bg-opacity-60 text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Black Coffee
               </div>
                   </div>

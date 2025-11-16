@@ -25,13 +25,13 @@ function Tea({ lef1, lef2, lef3, lef4, coff1, cof2, cof3, }) {
             </div>
             <div className="w-2/3 xl:mt-10 lg:mt-[10px] md:-mt-5 ">
               <h1 className="text-[12px] lg:text-[30px] md:text-[22px] xl:text-[44px] text-center text-[#5C2D0B] font-[ABeeZee]">Why We Love Tea</h1>
-              <p className="text-[9px] lg:text-[20px] md:text-[18px] xl:text-[27px] font-[Bellefair] text-[#832C2C] mb-1 lg:mt-10 md:mt-10">We believe that tea is the perfect blend of tradition and innovation, offering something for everyone.
+              <p className="text-[9px] lg:text-[20px] md:text-[18px] xl:text-[27px] font-[Bellefair] text-[#832C2C] mb-1 lg:mt-10 md:mt-10 mt-5">We believe that tea is the perfect blend of tradition and innovation, offering something for everyone.
                 Whether you're sipping a delicate white tea, enjoying the robust flavors of a classic black tea, or exploring the aromatic world of herbal blends,
                 each cup tells a story.</p>
             </div>
           </div>
 
-          <div className="w-full h-fit flex gap-10 xl:mt-20 lg:mt-20 md:mt-10 mt-10s justify-center items-center mt-3">
+          <div className="w-full h-fit flex gap-10 xl:mt-20 lg:mt-20 md:mt-10 mt-10 justify-center items-center ">
             <div className="w-2/3">
               <h1 className="text-[12px] lg:text-[30px] md:text-[22px] xl:text-[44px] text-left text-[#5C2D0B] font-[ABeeZee] xl:mb-10 lg:mb-10 mb-4">What Kind Of Tea We Serve For You</h1>
               <p className="text-[9px] lg:text-[20px] md:text-[18px] xl:text-[27px]  font-[Bellefair] text-[#832C2C] mb-1">Black tea is fully oxidized, giving it a deep, rich flavor with a hint of sweetness. It’s the most popular tea worldwide,
@@ -40,7 +40,7 @@ function Tea({ lef1, lef2, lef3, lef4, coff1, cof2, cof3, }) {
             </div>
             <div className="relative w-1/3 group">
               <img className="w-full min-h-[120px] sm:max-h-[260px] m-auto" src={t2} />
-                <div className="absolute inset-0 flex  text-[50px]  font-greatvibes items-center justify-center  bg-opacity-60 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 flex text-[16px] lg:text-[34px] md:text-[26px] xl:text-[48px] font-greatvibes items-center justify-center  bg-opacity-60 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Black Tea
               </div>
             </div>
@@ -63,7 +63,7 @@ function Tea({ lef1, lef2, lef3, lef4, coff1, cof2, cof3, }) {
           <div className="w-full h-fit flex gap-10 xl:-mt-20 md:-mt-20 -mt-5 justify-center items-center">
             <div className="relative w-1/3 group">
               <img className="w-full block peer min-h-[120px] sm:max-h-[280px] m-auto" src={t3} />
-              <div className="absolute inset-0 flex items-center text-[50px] font-greatvibes  text-left bg-opacity-60 text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 flex items-center text-[16px] lg:text-[34px] md:text-[26px] xl:text-[48px] font-greatvibes  text-left bg-opacity-60 text-white  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Green Tea
               </div>
 
@@ -74,7 +74,7 @@ function Tea({ lef1, lef2, lef3, lef4, coff1, cof2, cof3, }) {
                 enhancing mental clarity.</p>
             </div>
           </div>
-x
+
           <div className="w-full h-fit flex gap-10 lg:mt-10 md:mt-10 mt-5 justify-center items-center">
             <div className="w-2/3">
               <p className="text-[9px] lg:text-[20px] md:text-[15px] xl:text-[27px]  font-[Bellefair] text-[#832C2C] mb-1">White tea is the least processed of all teas, made from young tea leaves and buds. Its flavor is light, sweet, and delicate,
@@ -82,7 +82,7 @@ x
             </div>
             <div className="relative w-1/3 group">
               <img className="w-full min-h-[120px] sm:max-h-[260px] m-auto" src={t4} />
-                <div className="absolute inset-0 flex  text-[50px]  font-greatvibes   bg-opacity-60 text-white text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 flex  text-[16px] lg:text-[34px] md:text-[26px] xl:text-[48px]  font-greatvibes   bg-opacity-60 text-white text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 White Tea
               </div>
 
@@ -92,7 +92,7 @@ x
           <div className="w-full h-fit flex gap-10 lg:mt-10 md:mt-10 mt-5 justify-center items-center">
             <div className="w-1/3 group relative">
               <img className="w-full min-h-[120px] sm:max-h-[280px] m-auto" src={t5} />
-                <div className="absolute inset-0 flex  text-[50px]  font-greatvibes   bg-opacity-60 text-white text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 flex  text-[16px] lg:text-[34px] md:text-[26px] xl:text-[48px] font-greatvibes   bg-opacity-60 text-white text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Olong Tea
               </div>
             </div>
@@ -109,7 +109,7 @@ x
             </div>
             <div className="relative w-1/3 group">
               <img className="w-full min-h-[120px] sm:max-h-[260px] m-auto" src={t6} />
-                <div className="absolute inset-0 flex  text-[50px]  font-greatvibes   bg-opacity-60 text-white text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 flex text-[16px] lg:text-[34px] md:text-[26px] xl:text-[48px] font-greatvibes   bg-opacity-60 text-white text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Herbal Tea
               </div>
             </div>
@@ -118,7 +118,7 @@ x
           <div className="w-full h-fit flex gap-10 lg:mt-10 md:mt-10 mt-5 justify-center items-center">
             <div className="relative w-1/3 group">
               <img className="w-full min-h-[120px] sm:max-h-[260px] m-auto" src={t7} />
-                <div className="absolute inset-0 flex  text-[50px]  font-greatvibes   bg-opacity-60 text-white text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 flex  text-[16px] lg:text-[34px] md:text-[26px] xl:text-[48px]  font-greatvibes   bg-opacity-60 text-white text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Chai
               </div>
             </div>
