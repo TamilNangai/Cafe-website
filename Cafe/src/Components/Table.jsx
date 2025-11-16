@@ -12,17 +12,20 @@ function Table() {
         setUsers(users.filter((item) => item.id !== id));
     };
 
+    
     useEffect(() => {
         fetch("http://localhost:4000/users")
             .then((res) => res.json())
             .then((data) => setUsers(data));
     }, []);
 
+    
     const handleEdit = (user) => {
         setEditUserId(user.id);
-        setEditForm(user);
+        setEditForm(user);  
     };
 
+ 
     const handleSave = async () => {
         await fetch(`http://localhost:4000/users/${editUserId}`, {
             method: "PUT",
@@ -30,8 +33,11 @@ function Table() {
             body: JSON.stringify(editForm),
         });
 
-        setUsers(users.map((u) => (u.id === editUserId ? editForm : u)));
-        setEditUserId(null);
+        setUsers(
+            users.map((u) => (u.id === editUserId ? editForm : u))
+        );
+
+        setEditUserId(null);  
     };
 
     return (
@@ -40,10 +46,7 @@ function Table() {
                 Cafe Feedback 📝
             </h2>
 
-            <table
-                className="border border-black border-collapse w-full text-center"
-                cellPadding="10"
-            >
+            <table className="border border-black border-collapse w-full text-center" cellPadding="10">
                 <thead>
                     <tr>
                         <th className="border bg-[#a6492a] text-white p-2">ID</th>
@@ -76,7 +79,7 @@ function Table() {
                                         }
                                     />
                                 ) : (
-                                   `${u.firstName} ${u.lastName}`
+                                    `${u.firstName} ${u.lastName}`
                                 )}
                             </td>
 
@@ -87,85 +90,83 @@ function Table() {
                                         value={editForm.phone}
                                         onChange={(e) =>
                                             setEditForm({
-                                                ...editForm,
-                                                phone: e.target.value,
-                                            })
+                                                ...editForm,phone: e.target.value, })
                                         }
                                     />
                                 ) : (
-                                    <a href={`tel:${u.phone}`}>{u.phone}</a>
-                                )}
-                            </td>
+                                    <a href={`tel:${u.phone}`}>{u.phone}</a> )}
+                        </td>
 
-                            <td className="border w-[300px] p-2">
-                                {editUserId === u.id ? (
-                                    <textarea
-                                        className="border p-1 w-full"
-                                        value={editForm.message}
-                                        onChange={(e) =>
-                                            setEditForm({
-                                                ...editForm,
-                                                message: e.target.value,
-                                            })
-                                        }
-                                    />
-                                ) : (
-                                    u.message
-                                )}
-                            </td>
+                        <td className ="border w-[300px] p-2" >
+                            { editUserId === u.id ? (
+                            <textarea
+                                className="border p-1 w-full"
+                                value={editForm.message}
+                                onChange={(e) =>
+                                    setEditForm({
+                                        ...editForm,
+                                        message: e.target.value,
+                                    })
+                                }
+                            />
+                        ) : (
+                            u.message
+                        )}
+                </td>
 
-                            <td className="border p-2">
-                                {editUserId === u.id ? (
-                                    <input
-                                        className="border p-1 w-full"
-                                        value={editForm.email}
-                                        onChange={(e) =>
-                                            setEditForm({
-                                                ...editForm,
-                                                email: e.target.value,
-                                            })
-                                        }
-                                    />
-                                ) : (
-                                    <a href={`mailto:${u.email}`}>{u.email}</a>
-                                )}
-                            </td>
+                <td className="border p-2">
+                    {editUserId === u.id ? (
+                        <input
+                            className="border p-1 w-full"
+                            value={editForm.email}
+                            onChange={(e) =>
+                                setEditForm({
+                                    ...editForm,
+                                    email: e.target.value,
+                                })
+                            }
+                        />
+                    ) : (
+                        <a href={`mailto:${u.email}`}>{u.email}</a>
+                    )}
+                </td>
 
-                            <td className="border p-2">{u.date}</td>
-                            <td className="border p-2">{u.time}</td>
+                <td className="border p-2">{u.date}</td>
+                <td className="border p-2">{u.time}</td>
 
-                            <td className="border p-2">
-                                {editUserId === u.id ? (
-                                    <button
-                                        onClick={handleSave}
-                                        className="bg-blue-500 text-white px-3 py-1 rounded"
-                                    >
-                                        Save
-                                    </button>
-                                ) : (
-                                    <button
-                                        onClick={() => handleEdit(u)}
-                                        className="bg-green-500 text-white px-3 py-1 rounded"
-                                    >
-                                        Edit
-                                    </button>
-                                )}
-                            </td>
+                <td className="border p-2">
+                    {editUserId === u.id ? (
+                        <button
+                            onClick={handleSave}
+                            className="bg-blue-500 text-white px-3 py-1 rounded"
+                        >
+                            Save
+                        </button>
+                    ) : (
+                        <button
+                            onClick={() => handleEdit(u)}
+                            className="bg-green-500 text-white px-3 py-1 rounded"
+                        >
+                            Edit
+                        </button>
+                    )}
+                </td>
 
-                            <td className="border p-2">
-                                <button
-                                    className="bg-red-500 text-white px-3 py-1 rounded"
-                                    onClick={() => handleDelete(u.id)}
-                                >
-                                    Delete
-                                </button>
-                            </td>
-                        </tr>
+                
+                <td className="border p-2">
+                    <button
+                        className="bg-red-500 text-white px-3 py-1 rounded"
+                        onClick={() => handleDelete(u.id)}
+                    >
+                        Delete
+                    </button>
+                </td>
+            </tr>
                     ))}
-                </tbody>
-            </table>
-        </div>
+        </tbody>
+            </table >
+        </div >
     );
 }
 
-export default Table;
+export default Table;
