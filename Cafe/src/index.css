@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Bellefair&family=Marmelad&family=Monofett&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -27,26 +28,21 @@
     align-items: center;
 }
 
-@layer base {
-    option:checked {
-        background-color: rgba(255, 166, 0, 0.912);
-        
-    }    
-}
-@layer base {
-    option:hover {
-            background-color: rgba(255, 98, 0, 0.912) !important;
-    
+  @keyframes slide {
+    0% {
+         transform: translateX(0); 
         }
-}
+    100% { 
+        transform: translateX(-50%);
+     }
+  }
+
+  .animate-slides {
+    animation: slide 10s linear infinite;
+  }
 
 
-/* input:autofill {
-    background-color: rgb(255, 255, 255, 0.2) !important;
-} */
-/* #form-container {
-   background-color: rgb(255, 255, 255,0.2) !important;
-} */
+
 
 /* paracarousel */
 .paracarousel {top: 100px;left: 40px;font-family: "Bellefair", serif;}
@@ -145,3 +141,4 @@
 @media screen and (min-width: 768px) {.linefour {top: 110px;left: 200px;}}
 @media screen and (min-width: 1024px) {.linefour {top: 190px;left: 250px;}}
 @media screen and (min-width: 1440px) {.linefour {top: 280px;left: 380px;}}       
+
